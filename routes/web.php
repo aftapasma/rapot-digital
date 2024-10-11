@@ -9,3 +9,7 @@ Route::get('/', function () {
 Route::get('profile', function () {
     return view('admin.profile');
 });
+
+Route::get('kelas', function () {
+    return view('admin.class');
+});
