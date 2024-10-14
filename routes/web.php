@@ -13,3 +13,6 @@ Route::get('profile', function () {
 Route::get('kelas', function () {
     return view('admin.class');
 });
+Route::get('siswa', function () {
+    return view('admin.student');
+});
