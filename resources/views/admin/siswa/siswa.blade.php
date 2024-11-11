@@ -18,17 +18,32 @@
 
     <div class="p-4 sm:ml-64">
         <div class="p-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700 mt-14">
+            <div>
 
-            <form class="max-w-sm p-6">
-                <label for="countries" class="text-sm  font-bold text-gray-900 dark:text-white">Silahkan pilih kelas dibawah</label>
-                <select id="countries"
-                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                    <option selected>Pilih Kelas</option>
-                    <option value="US">1 A</option>
-                    <option value="CA">1 b</option>
-                    <option value="FR">1 c</option>
-                    <option value="DE">2 a</option>
-                </select>
+            </div>
+            <form class="flex space-x-4 p-6">
+                <!--  Kelas Tingkatan Dropdown -->
+                <div class="flex-col w-full">
+                    <label for="tingkatan" class="text-sm font-bold text-gray-900 dark:text-white">Silahkan pilih tingkatan</label>
+                    <select id="tingkatan"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                        <option selected>Pilih tingkatan</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                    </select>
+                </div>
+
+                <!-- Kelas Dropdown -->
+                <div class="flex-col w-full">
+                    <label for="kelas" class="text-sm font-bold text-gray-900 dark:text-white">Silahkan pilih kelas</label>
+                    <select id="kelas"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                        <option selected>Pilih Kelas</option>
+                        <option value="a">A</option>
+                        <option value="b">B</option>
+                        <option value="c">C</option>
+                    </select>
+                </div>
             </form>
 
             <section class="bg-gray-50 dark:bg-gray-900 p-3 sm:p-5">
